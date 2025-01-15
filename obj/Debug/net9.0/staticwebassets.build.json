@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "HqJGFRK73UoisNXh0z+P1qc4zbUBUkaYFpwheZeAFIY=",
+  "Source": "crud_mysql",
+  "BasePath": "_content/crud_mysql",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

@@ -1,0 +1,6 @@
+@crud_mysql_HostAddress = http://localhost:5275
+
+GET {{crud_mysql_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
