@@ -1,5 +1,6 @@
 using crud_mysql.Data;
 using crud_mysql.Data.Repository;
+using crud_mysql.Service;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,6 +14,7 @@ var serverVersion = new MySqlServerVersion(new Version(8, 0, 40));
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseMySql(builder.Configuration.GetConnectionString("defaultConnection"), serverVersion));
 
+builder.Services.AddScoped<IPersonService, PersonService>();
 builder.Services.AddScoped<IPersonRepository, PersonRepository>();
 
 var app = builder.Build();
